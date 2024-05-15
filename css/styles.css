@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark-100: #141414;
+  --dark-200: #292929;
+  --dark-300: #404040;
+  --dark-400: #585858;
+  --dark-500: #727272;
+  --dark-600: #8c8c8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--dark-100);
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+
+header {
+  padding: 15px 40px;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.nav-item a:hover,
+.nav-item.active a {
+  color: var(--dark-500);
+}
+
+/* Section */
+section {
+  padding: 50px 40px;
+  width: 100%;
+  min-height: 80vh;
+  background: var(--dark-100);
+}
+
+/* Home */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: transparent;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: default;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: var(--dark-200);
+}
+
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.right .card {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.rotate-45,
+.rotate-minus-45 {
+  width: 600px;
+  height: 400px;
+  background-color: transparent;
+  border: 1px solid var(--dark-500);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+  filter: brightness(0.3);
+}
+
+.rotate-minus-45 {
+  transform: rotate(-55deg);
+  filter: brightness(0.3);
+}
+
+#img3 {
+  border-radius: 20px;
+  filter: brightness(0.5);
+}
