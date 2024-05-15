@@ -388,3 +388,31 @@ form {
   background-color: var(--dark-300);
   border-radius: 10px;
 }
+
+/* Footer */
+footer {
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--dark-500);
+  transition: all 0.3s ease;
+}
+
+footer i:hover {
+  color: var(--dark-300);
+}
