@@ -172,7 +172,7 @@ img {
 
 #projects {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -205,7 +205,7 @@ img {
   gap: 20px;
 }
 
-.card {
+.projects-list .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,4 +251,42 @@ img {
   color: var(--dark-500);
 }
 
-/* About */
+/* Skills */
+#skills {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.my-skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+  gap: 20px;
+  place-items: center;
+  margin-top: 40px;
+}
+
+.skill {
+  background-color: transparent;
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+}
+
+.skill i {
+  font-size: 3rem;
+  color: var(--dark-600);
+}
