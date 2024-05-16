@@ -200,7 +200,7 @@ section {
 .projects-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 20px;
 }
@@ -445,6 +445,10 @@ footer i:hover {
     filter: brightness(0.5);
   }
 
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .content h1 span {
     -webkit-text-stroke: 2px white;
     color: transparent;
@@ -481,6 +485,7 @@ footer i:hover {
   }
 
   .projects-list {
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
 
