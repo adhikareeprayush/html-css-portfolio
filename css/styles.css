@@ -274,6 +274,7 @@ section {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
   display: flex;
+  width: 150px;
   justify-content: center;
   flex-direction: column;
   gap: 5px;
