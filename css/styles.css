@@ -507,4 +507,16 @@ footer i:hover {
     transform: translate(-50%, -50%);
     width: 90%;
   }
+
+  footer {
+    padding: 10px 20px;
+  }
+
+  footer .footer-content p {
+    font-size: 0.8rem;
+  }
+
+  footer i {
+    font-size: 1.2rem;
+  }
 }
