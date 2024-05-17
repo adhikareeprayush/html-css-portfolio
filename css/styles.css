@@ -111,18 +111,18 @@ section {
 
 .btn {
   padding: 10px 20px;
-  background: transparent;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  background: var(--dark-200);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
   border: none;
   border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: default;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
   width: fit-content;
 }
 
 .btn:hover {
-  background: var(--dark-200);
+  background: var(--dark-300);
 }
 
 .right {
@@ -364,14 +364,9 @@ form {
 
 .form-group button {
   padding: 10px;
-  background-color: transparent;
-  border: none;
-  border-radius: 5px;
   color: white;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .form-group button:hover {
@@ -524,4 +519,18 @@ footer i:hover {
 textarea {
   max-width: 100%;
   max-height: 200px;
+}
+
+@media (max-width: 370px) {
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+
+  footer .social-icons {
+    gap: 2px;
+  }
+
+  .footer i {
+    font-size: 1rem;
+  }
 }
